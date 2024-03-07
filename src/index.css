@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Navbar styling */
+
+.nav_logo{
+  width: 40px;
+  padding:2px;
+  background-color: white;
+}
+
+.bg-blue{
+ background-color:#07407b;
+}
+
+.navigation_links{
+  font-size: 25px;
+  color:white;
+  margin-left: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.navigation_links:hover{
+  color:orange;
+  transition: all .3s ease-in-out;
+}
+
+
+/* Home page styling */
+
+.carousel_section{
+  position: relative;
+}
+
+.carousel_img{
+  height: 100vh;
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.home_content{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+/* Products page styling */
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.card-img-top {
+  object-fit: contain;
+  height: 150px;
+}
+
+.products_display{
+  margin-top: 100px;
+}
+
+
+
+/* 404 Styling*/
+
+.not_found_img{
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+}
+
+
+/* Cart Section */
+
+.cart_section{
+  margin-top:100px;
+}
+
+.empty_cart_image{
+  min-height: 100vh;
+}
