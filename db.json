@@ -18,10 +18,18 @@
     },
     {
       "id": "df2f",
-      "name": "asdfsfa",
-      "email": "sdfasfdasf@gmasdfa.dsg",
-      "skills": "asfdasf",
-      "role": "afasherrikh ",
+      "name": "Sachin",
+      "email": "srt@gmail.com",
+      "skills": "azure",
+      "role": "Admin",
+      "experience": "3-5 Years"
+    },
+    {
+      "id": "666c",
+      "name": "Rohit",
+      "email": "rohit@mi.com",
+      "skills": "Pandas",
+      "role": "Program manager",
       "experience": "3-5 Years"
     }
   ]

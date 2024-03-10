@@ -82,7 +82,8 @@ export default function User() {
         setEditUserData(user);
     };
 
-    const handleUpdateUser = (updatedUserData) => {
+    const handleUpdateUser = (e, updatedUserData) => {
+        e.preventDefault();
         updateUser(updatedUserData.id, updatedUserData);
     };
 
@@ -200,7 +201,7 @@ export default function User() {
                                 <h5 className="modal-title">Edit User</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-                            <form onSubmit={() => handleUpdateUser(editUserData)}>
+                            <form onSubmit={(e) => handleUpdateUser(e, editUserData)}>
                                 <div className="modal-body">
                                     <div className="row mb-3">
                                         <label htmlFor="edit_user_name_field" className="col-sm-2 col-form-label">Name</label>
