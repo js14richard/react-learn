@@ -5,8 +5,8 @@
       "name": "Siril Richard",
       "email": "js1@gamil.com",
       "skills": "Angular, Python, Wordpress",
-      "role": "Full Stack Developer",
-      "experience": "3-5 Years"
+      "role": "Full Stack MERN Developer",
+      "experience": "7+ Years"
     },
     {
       "id": "2",
@@ -15,6 +15,14 @@
       "skills": "Java, Oracle, AWS",
       "role": "DB Admin",
       "experience": "1-3 Years"
+    },
+    {
+      "id": "df2f",
+      "name": "asdfsfa",
+      "email": "sdfasfdasf@gmasdfa.dsg",
+      "skills": "asfdasf",
+      "role": "afasherrikh ",
+      "experience": "3-5 Years"
     }
   ]
 }

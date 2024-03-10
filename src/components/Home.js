@@ -22,10 +22,29 @@ export default function Home() {
 
   return (
     <div className='container text-center'>
-        <div className='carousel_section'>
-            <img className='carousel_img' src={image_url} />
-
-            <div className='home_content'>
+        <div className='carousel_section row'>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://source.unsplash.com/1200x700/?cricket" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="http://source.unsplash.com/1200x700/?cricketer" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="http://source.unsplash.com/1200x700/?wicket" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div className='home_content'>
                 <h1>Explore the world of Sports</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio alias nemo eos recusandae odit corrupti sunt officiis quisquam at? Placeat a repellat quia quis possimus suscipit vel illum voluptatibus facilis.</p>
 

@@ -10,7 +10,6 @@ export default function User() {
         role: '',
         experience: '',
     });
-    const [editingUser, setEditingUser] = useState(null);
     const [editUserData, setEditUserData] = useState({
         name: '',
         email: '',
@@ -67,8 +66,12 @@ export default function User() {
     
     const updateUser = async (userId, updatedUserData) => {
         try {
-            await axios.put(`http://localhost:3001/users/${userId}`, updatedUserData);
-            document.getElementById('update_user_modal_close').click();
+            const update_confirmation = window.confirm("Are you sure to update the values ?")
+            if (update_confirmation){
+                await axios.put(`http://localhost:3001/users/${userId}`, updatedUserData);
+                document.getElementById('update_user_modal_close').click();
+            }
+            
             
         } catch (error) {
             console.error('Error updating user:', error);
@@ -76,13 +79,11 @@ export default function User() {
     };
 
     const handleEdit = (user) => {
-        setEditingUser(user);
         setEditUserData(user);
     };
 
     const handleUpdateUser = (updatedUserData) => {
         updateUser(updatedUserData.id, updatedUserData);
-        setEditingUser(null);
     };
 
     {/* DELETE operation */}
@@ -192,8 +193,7 @@ export default function User() {
         
             {/* Update User Modal */}
 
-            {editingUser && (
-                <div className="modal" id="update_user_modal" tabIndex="-1">
+            <div className="modal" id="update_user_modal" tabIndex="-1">
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -248,7 +248,6 @@ export default function User() {
                         </div>
                     </div>
                 </div>
-            )}
         </div>
     )
 }
