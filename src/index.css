@@ -21,6 +21,12 @@ code {
   background-color: white;
 }
 
+.logo_text{
+  margin-left:15px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
 .bg-blue{
  background-color:#07407b;
 }
@@ -79,7 +85,7 @@ code {
   -webkit-line-clamp: 1;
 }
 
-.card-img-top {
+.products_card_image {
   object-fit: contain;
   height: 150px;
 }
@@ -88,7 +94,10 @@ code {
   margin-top: 100px;
 }
 
-
+.products_detail_image{
+  height: 350px;
+  object-fit: contain;
+}
 
 /* 404 Styling*/
 
@@ -107,4 +116,8 @@ code {
 
 .empty_cart_image{
   min-height: 100vh;
+}
+
+.test_modal{
+  margin-top:250px;
 }

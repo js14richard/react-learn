@@ -20,7 +20,7 @@ export default function Cart() {
 
   if (!product_id){
     return (
-       <div className='container mt-2'>
+       <div className='container mt-2 text-center'>
          <img src='./images/empty_cart.png' className='empty_cart_image'></img>
        </div> 
     )
@@ -31,11 +31,11 @@ export default function Cart() {
   }
 
   return (
-    <div className='container products_display'>
+    <div className='container products_display text-center'>
       <div className='row mt-5'>
         <div className='col-lg-12 col-md-6 mb-4'>
           <div className="card">
-            <img className="card-img-top mt-2" src={productData.image} alt="Product" />
+            <img className="card-img-top mt-2 products_detail_image" src={productData.image} alt="Product" />
             <div className="card-body">
               <h6 className="card-text text-secondary">PRODUCT</h6>
               <h5 className='card-title'>{productData.title}</h5>

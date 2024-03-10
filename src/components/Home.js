@@ -21,7 +21,7 @@ export default function Home() {
     }
 
   return (
-    <div className='container'>
+    <div className='container text-center'>
         <div className='carousel_section'>
             <img className='carousel_img' src={image_url} />
 
